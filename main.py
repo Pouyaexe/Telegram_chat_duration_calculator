@@ -3,10 +3,11 @@
 # an app to convert jason to df
 import json
 import pandas as pd
+from sympy import print_jscode
 
 
 # load data using Python JSON module
-with open('data.json','r', encoding="utf8") as f:
+with open('result.json','r', encoding="utf8") as f:
     data = json.loads(f.read())
 # Flatten data
 df = pd.json_normalize(data, record_path =['messages'])
@@ -57,7 +58,7 @@ print(df_less_than_15_minutes)
 sum = df_less_than_15_minutes.sum().iloc[0]
 # sum is in seconds, converting it the date format and printing it
 import datetime, time
-
+print("Days, Hours:Minutes:Seconds")
 print(datetime.timedelta(seconds=sum))
 # %%
 
