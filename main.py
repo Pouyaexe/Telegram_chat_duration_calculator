@@ -1,9 +1,7 @@
-
 #%%
 # an app to convert jason to df
 import json
 import pandas as pd
-from sympy import print_jscode
 
 
 # load data using Python JSON module
