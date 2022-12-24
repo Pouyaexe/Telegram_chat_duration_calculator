@@ -10,7 +10,6 @@ with open('result.json','r', encoding="utf8") as f:
 # Flatten data
 df = pd.json_normalize(data, record_path =['messages'])
 
-
 # extracting the the 'date' column from the dataframe into a new dataframe
 def extract_date(df):
     df_date = df.loc[:,['date']]
