@@ -1,7 +1,7 @@
 #%%
 # an app to convert jason to df
 import json
-import pandas as pd
+import pandas as pd # pd is used for dataframes
 
 
 # load data using Python JSON module
