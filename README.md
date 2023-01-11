@@ -2,7 +2,6 @@
 
 A simple python app to calculate how much time you spent chatting with somebody!
 
-
 First, you should export your chat using the Telgram Desktop.
 
 Go to your desired chat and click on the  three dots on the top right corner of the screen.
@@ -18,4 +17,3 @@ Now export the chat. It may take a while.
 You now have the Jason file, copy it to this folder and run the script.
 
 The app is still in development, so you see some debugging messages. The last thing you should see is the chat duration in the Day Hours:Minutes:Seconds format.
-
